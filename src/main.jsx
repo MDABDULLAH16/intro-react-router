@@ -12,6 +12,7 @@ import Fast from "./Fast/Fast.jsx";
 import FriendDetails from "./FriendDetails/FriendDetails.jsx";
 import Posts from "./Posts/Posts.jsx";
 import PostDetails from "./PostDetails/PostDetails.jsx";
+import NotFound from "./NotFound/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
         element: <Order></Order>,
       },
       { path: "/login", element: <Login></Login> },
+      {
+        path: "*",
+        element: <NotFound></NotFound>,
+      },
     ],
   },
 ]);

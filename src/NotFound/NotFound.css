@@ -1,0 +1,35 @@
+.not-found-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.not-found-content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #e74c3c; /* Red color for emphasis, you can change this */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Add some animation for a subtle effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.not-found-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
